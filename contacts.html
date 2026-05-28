@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты и запись — студия наращивания ресниц в Белореченске</title>
+  <meta name="description" content="Адрес студии наращивания ресниц Натальи Погореловой в Белореченске, телефон, часы работы, видео как добраться и форма онлайн-записи.">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Наталья Погорелова — на главную">
+        <img src="logo.svg" alt="Логотип студии Наталья Погорелова" class="logo-img">
+        <span class="logo-text">
+          <span class="logo-name">Наталья Погорелова</span>
+          <span class="logo-sub">студия наращивания ресниц</span>
+        </span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Основное меню">
+        <ul class="nav-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="about.html">О мастере</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <div class="nav-extra">
+          <a href="tel:+79182450831" class="nav-phone">+7 (918) 245-08-31</a>
+          <a href="contacts.html" class="btn btn-accent btn-sm nav-cta">Записаться</a>
+        </div>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ЗАГОЛОВОК СТРАНИЦЫ -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div class="crumbs"><a href="index.html">Главная</a> — <span>Контакты</span></div>
+      <h1 class="section-title">Контакты и <em>запись</em></h1>
+      <p class="lead">Запишитесь удобным способом — по телефону, через мессенджеры или прямо на сайте.</p>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ И ФОРМА -->
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <div class="map-embed">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?text=%D0%91%D0%B5%D0%BB%D0%BE%D1%80%D0%B5%D1%87%D0%B5%D0%BD%D1%81%D0%BA%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%97%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%2C%208%D0%96&z=17"
+            width="100%" height="100%" frameborder="0" allowfullscreen
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Студия на карте Яндекс — г. Белореченск, ул. Заводская, 8Ж"></iframe>
+        </div>
+      </div>
+
+      <div class="reveal reveal-d1">
+        <div class="form-card">
+          <h2 class="section-title" style="font-size:2rem;margin-bottom:.4rem">Записаться на процедуру</h2>
+          <p class="lead" style="margin-bottom:1.6rem">Оставьте заявку — я свяжусь с вами, чтобы подтвердить удобное время.</p>
+          <form id="bookingForm" novalidate>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="fName">Ваше имя</label>
+                <input type="text" id="fName" name="name" placeholder="Например, Анна">
+                <span class="field-error">Пожалуйста, укажите имя</span>
+              </div>
+              <div class="form-field">
+                <label for="fPhone">Телефон</label>
+                <input type="tel" id="fPhone" name="phone" placeholder="+7 (918) 000-00-00">
+                <span class="field-error">Введите корректный номер телефона</span>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="fService">Услуга</label>
+              <select id="fService" name="service">
+                <option value="">Выберите услугу</option>
+                <option value="classic">Классическое наращивание</option>
+                <option value="volume">Объём 2D–3D</option>
+                <option value="mega">Голливудский объём</option>
+                <option value="lamination">Ламинирование ресниц</option>
+                <option value="botox">Ботокс ресниц</option>
+                <option value="removal">Снятие / коррекция</option>
+                <option value="consult">Консультация</option>
+              </select>
+              <span class="field-error">Выберите интересующую услугу</span>
+            </div>
+            <div class="form-field">
+              <label for="fDate">Желаемая дата и время</label>
+              <input type="text" id="fDate" name="date" placeholder="Например, суббота, после 14:00">
+            </div>
+            <div class="form-field">
+              <label for="fMessage">Комментарий</label>
+              <textarea id="fMessage" name="message" placeholder="Пожелания по объёму, вопросы — всё, что хотите уточнить"></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent" style="width:100%">Отправить заявку</button>
+            <div class="form-success">Спасибо! Ваша заявка принята. Я свяжусь с вами в ближайшее время для подтверждения записи.</div>
+            <p class="form-hint">Нажимая кнопку, вы соглашаетесь на обработку персональных данных. Заявка ни к чему не обязывает.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ВИДЕО: КАК ДОБРАТЬСЯ -->
+  <section class="section section--soft">
+    <div class="container">
+      <div class="section-head text-center reveal">
+        <span class="eyebrow eyebrow--center">Видео</span>
+        <h2 class="section-title">Как <em>добраться</em></h2>
+        <p class="lead">Короткое видео с озвучкой подскажет дорогу до студии — включите звук.</p>
+      </div>
+      <div class="video-wrap reveal">
+        <div class="video-frame">
+          <video class="video-el" controls preload="metadata" playsinline poster="images/video-poster.png">
+            <source src="Video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает воспроизведение видео.
+          </video>
+        </div>
+        <p class="video-note">Не получается найти студию? Позвоните мне — подскажу дорогу: <a href="tel:+79182450831">+7 (918) 245-08-31</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-bg ph" data-label="Фоновое фото · cta.jpeg">
+      <img src="images/cta.jpeg" alt="">
+    </div>
+    <div class="container">
+      <div class="cta-inner reveal">
+        <span class="eyebrow eyebrow--center eyebrow--light">Ждём вас</span>
+        <h2 class="section-title">Удобнее <em>позвонить?</em></h2>
+        <p>Наберите меня напрямую — отвечу на вопросы и подберу свободное время.</p>
+        <div class="cta-actions">
+          <a href="tel:+79182450831" class="btn btn-light">+7 (918) 245-08-31</a>
+          <a href="gallery.html" class="btn btn-ghost">Смотреть работы</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОДВАЛ -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-about">
+        <div class="footer-logo">
+          <img src="logo.svg" alt="Логотип студии Наталья Погорелова" class="logo-img">
+          <span class="logo-text">
+            <span class="logo-name">Наталья Погорелова</span>
+            <span class="logo-sub">студия наращивания ресниц</span>
+          </span>
+        </div>
+        <p>Студия наращивания и ламинирования ресниц в Белореченске. Выразительный взгляд, безопасные материалы и комфорт на каждой процедуре.</p>
+        <div class="footer-socials">
+          <a href="#">Instagram</a>
+          <a href="#">Telegram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="about.html">О мастере</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="services.html">Классическое наращивание</a></li>
+          <li><a href="services.html">Объёмное наращивание</a></li>
+          <li><a href="services.html">Ламинирование ресниц</a></li>
+          <li><a href="services.html">Ботокс ресниц</a></li>
+          <li><a href="services.html">Снятие и коррекция</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <ul class="footer-contacts">
+          <li><span>Адрес</span>г. Белореченск, ул. Заводская, 8Ж, второй этаж, офис 4</li>
+          <li><span>Телефон</span><a href="tel:+79182450831">+7 (918) 245-08-31</a></li>
+          <li><span>Часы работы</span>Пн–Сб 09:00–20:00 · Вс — выходной</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Наталья Погорелова. Все права защищены.</span>
+      <span>Студия наращивания ресниц · Белореченск</span>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Наверх"><span></span></button>
+  <script src="js/main.js"></script>
+</body>
+</html>
